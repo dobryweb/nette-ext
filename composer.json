@@ -1,25 +1,30 @@
 {
-    "name": "dobryweb/nette-ext",
-    "description": "Addons for Nette Framework",
-    "type": "library",
-    "keywords": [ "nette", "addon", "ext", "extensions" ],
-    "license": "BSD-3-Clause",
-    "authors": [
-        {
-            "name": "Vaclav Jirovsky",
-            "email": "vjirovsky@vjirovsky.cz"
-        }
-    ],
-    "autoload": {
-    		"psr-0": {
-    			"Dobryweb\\NetteExt\\": "src/"
-    		}
-	   },
-    "require": {
-		    "php": ">=5.4"
-    },
-    "require-dev": {
-    		"nette/tester": "~1.4",
-    		"tracy/tracy": "~2.3"
-	   }
+	"name": "dobryweb/nette-ext",
+	"description": "Addons for Nette Framework",
+	"type": "library",
+	"keywords": [
+		"nette",
+		"addon",
+		"ext",
+		"extensions"
+	],
+	"license": "BSD-3-Clause",
+	"authors": [
+		{
+			"name": "Vaclav Jirovsky",
+			"email": "vjirovsky@vjirovsky.cz"
+		}
+	],
+	"autoload": {
+		"classmap": [
+			"src/"
+		]
+	},
+	"require": {
+		"php": ">=5.4"
+	},
+	"require-dev": {
+		"nette/tester": "~1.4",
+		"tracy/tracy": "~2.3"
+	}
 }
